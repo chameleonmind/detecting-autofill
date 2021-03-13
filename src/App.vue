@@ -1,27 +1,29 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <example-form/>
+    <example-form check-autofill/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+
+import ExampleForm from '@/components/exampleForm'
 
 export default {
   name: 'App',
-  components: {
-    HelloWorld
-  }
+  components: { ExampleForm }
 }
 </script>
 
 <style lang="scss">
+* {
+  box-sizing: border-box;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
   margin-top: 60px;
 }
